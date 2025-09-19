@@ -1,0 +1,38 @@
+.switcher{
+    min-width: 128px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.switcher button{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(43, 47, 86, 0.85);
+    &:hover{
+        text-shadow: 0 0 10px #fff;
+    }
+}
+
+.switcher button:disabled{
+    background-color: rgba(128, 129, 255, 0.43);
+    text-shadow: none;
+}
+
+@media (max-width: 900px) {
+    .switcher{
+        min-width: 88px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+    }
+}

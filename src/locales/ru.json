@@ -1,5 +1,12 @@
 {
-    "header": {
-        "fio": "Александр Овечкин"
+    "main": {
+        "header": {
+            "fio": "Александр Овечкин",
+            "telegram": "@unnoticed00",
+            "position": "Frontend Разработчик",
+            "email": "sanchous20@gmail.com",
+            "accommodation": "Россия, Санкт-Петербург",
+            "phone": "+7-911-235-59-27"
+        }
     }
 }

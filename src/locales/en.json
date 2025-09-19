@@ -1,5 +1,13 @@
 {
-    "header": {
-        "fio": "Alex Ovechkin"
+    "main": {
+        "header": {
+            "fio": "Alex Ovechkin",
+            "telegram": "@unnoticed00",
+            "position": "Frontend Developer",
+            "email": "sanchous20@gmail.com",
+            "accommodation": "Russia, Saint-P",
+            "phone": "+7-911-235-59-27"
+        }
     }
+
 }
