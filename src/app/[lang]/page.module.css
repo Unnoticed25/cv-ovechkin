@@ -178,9 +178,22 @@ a.secondary {
   }
 }
 
+.profileContainer{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
+  align-items: start;
+}
+
 .profileImg{
   border-radius: 9999px;
   box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.4);
+  grid-column: 2;
+  justify-self: center;
+}
+
+.profileImg{
+
 }
 
 .header{
@@ -201,8 +214,20 @@ a.secondary {
   padding: 0.8rem;
   background-color: #7070fc80;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
+.position:hover {
+  background-color: rgba(112, 112, 252, 0.8);
+}
+
+.email{
+  transition: 0.3s;
+}
+
+.email:hover{
+  text-shadow: 0 0 10px #ffffff;
+}
 
 .mainInfo {
   padding-top: 12px;
@@ -240,6 +265,23 @@ a.secondary {
 
 .icon{
   color: #7070fc;
+}
+
+.verticalDivider{
+  border-left: 2px solid #45477a;
+  height: 100%;
+  display: block;
+}
+
+.blockInfo{
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-areas: "left center right";
+  justify-content: center;
+}
+
+.blockInfo > :nth-child(3) {
+  padding: 0 0 0 20px;
 }
 
 

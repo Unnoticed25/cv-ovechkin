@@ -24,9 +24,8 @@ export const metadata: Metadata = {
     description: "My portfolio",
 };
 
-export default async function RootLayout({children, params}: Readonly<{ children: React.ReactNode; }>) {
+export default async function RootLayout({children, params}:LayoutProps) {
     const {lang} = await params;
-
     return (
         <html lang={lang}>
           <body className={`${geistSans.variable} ${geistMono.variable}`}>

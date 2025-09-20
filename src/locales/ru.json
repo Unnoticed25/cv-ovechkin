@@ -7,6 +7,17 @@
             "email": "sanchous20@gmail.com",
             "accommodation": "Россия, Санкт-Петербург",
             "phone": "+7-911-235-59-27"
+        },
+        "info": {
+            "about": {
+                "title_experience": "Мой опыт",
+                "title_about": "Обо мне",
+                "text_experience": "sanchous20@gmail.com",
+                "text_about": "Россия, Санкт-Петербург"
+            },
+            "skills": {
+                "title_skills": "Навыки & Инструменты"
+            }
         }
     }
 }
