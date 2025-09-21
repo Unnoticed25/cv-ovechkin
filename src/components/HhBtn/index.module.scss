@@ -6,15 +6,15 @@
   justify-content: center;
 }
 
-.tgLink {
+.hhLink {
   transition: filter 0.3s ease;
 
   &:hover {
-    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(0px 0px 5px rgba(255, 48, 48, 0.8));
   }
 }
 
-.tgLink > img{
+.hhLink > img{
   width: 28px;
   height: 28px;
   transition: ease 0.3s;

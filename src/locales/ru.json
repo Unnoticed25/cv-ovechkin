@@ -12,12 +12,22 @@
             "about": {
                 "title_experience": "Мой опыт",
                 "title_about": "Обо мне",
-                "text_experience": "sanchous20@gmail.com",
-                "text_about": "Россия, Санкт-Петербург"
+                "title_education": "Образование",
+                "text_education": "<span><i>Санкт-Петербургский колледж телекоммуникаций им. Э. Т. Кренкеля <br>(СПбКТ)</i> - 2020 г. <br>09.02.03 Программирование в компьютерных системах</span>",
+                "text_experience": "<p style=\"color: white\">Middle Frontend Разработчик, 2021 - 2025</p><i> СУМ1 - \"Система управления мероприятием №1\"</i><br> <a class=\"siteLink\" href=\"https://sum1.ru/\" target=\"_blank\" rel=\"noopener\">перейти</a> <br><p style=\"color: white; margin-top: 12px;\">Junior Frontend Разработчик, 2020</p><i> GO-UP</i><br> <a class=\"siteLink\" href=\"https://go-up.info/\" target=\"_blank\" rel=\"noopener\">перейти</a>",
+                "text_about": "6 лет создаю web-приложения и поглащаю технологии. <br>Привношу эффективные решения, которые закрывают не только продуктовые, но и ключевые бизнес-потребности. <br> Верю, что сплоченной команде под силу любые задачи."
             },
             "skills": {
-                "title_skills": "Навыки & Инструменты"
+                "title_skills": "Навыки & Инструменты",
+                "title_add": "Дополнительно",
+                "text_skills": "Next.js, React.js, JavaScript, TypeScript, HTML/CSS, PHP, Redux, Zustand, jQuery, Jest, Drupal, SQL, Git",
+                "text_skills_add": "WebSocket, Mui/Ant/Tailwind, Electron/Tauri, Scss/Sass, Rest API, WebPack, Vite, CI/CD, Английский язык B2, И многое другое"
             }
         }
+    },
+    "hints": {
+        "phone": "Телефон",
+        "email": "Email",
+        "copied": "скопирован"
     }
 }

@@ -1,32 +1,71 @@
 'use client'
 
-import styles from "@/app/[lang]/page.module.css";
+import { useState } from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
-import {getTranslations} from "@/utils/i18n";
+import ContentCopy from '@mui/icons-material/ContentCopy';
+import styles from "./index.module.scss"
 import Link from "next/link";
 
 interface IProps {
-    translate: Record<string, string>;
+    tHeader: Record<string, string>;
+    tHints: Record<string, string>;
 }
 
-export default function ContractInfo({translate}:IProps) {
+export default function ContractInfo({tHeader, tHints}: IProps) {
+    const [copiedItem, setCopiedItem] = useState<string | null>(null);
+
+    const handleCopy = async (text: string, itemName: string) => {
+        try {
+            await navigator.clipboard.writeText(text);
+            setCopiedItem(itemName);
+            setTimeout(() => setCopiedItem(null), 2000);
+        } catch (error) {
+            console.error('Ошибка копирования:', error);
+        }
+    };
 
     return (
-        <div className={styles.mainInfo}>
-            <div className={styles.contactItem}>
-                <EmailIcon className={styles.icon}/>
-                <Link href={''} target={"_blank"} rel={"noopener noreferrer"}><span className={styles.email}>{translate.email}</span></Link>
+        <>
+            {copiedItem && (
+                <div className={styles.tooltip}>
+                    {copiedItem} {tHints.copied}
+                </div>
+            )}
+            <div className={styles.mainInfo}>
+                <div className={styles.contactItem}>
+                    <EmailIcon className={styles.icon}/>
+                    <Link href={'mailto:sanchous20@gmail.com'}>
+                        <span
+                            className={styles.email}
+                            onClick={async (e) => {
+                                e.preventDefault();
+                                await handleCopy('sanchous20@gmail.com', tHints.email);
+                            }}
+                        >
+                            {tHeader.email}
+                            <ContentCopy className={styles.copy}/>
+                        </span>
+                    </Link>
+                </div>
+
+                <div className={styles.contactItem}>
+                    <LocationOnIcon className={styles.icon}/>
+                    <span>{tHeader.accommodation}</span>
+                </div>
+
+                <div className={styles.contactItem}>
+                    <PhoneIcon className={styles.icon}/>
+                    <span
+                        className={styles.phone}
+                        onClick={() => handleCopy(tHeader.phone, tHints.phone)}
+                    >
+                        {tHeader.phone}
+                        <ContentCopy className={styles.copy} />
+                    </span>
+                </div>
             </div>
-            <div className={styles.contactItem}>
-                <LocationOnIcon className={styles.icon}/>
-                <span>{translate.accommodation}</span>
-            </div>
-            <div className={styles.contactItem}>
-                <PhoneIcon className={styles.icon}/>
-                <span>{translate.phone}</span>
-            </div>
-        </div>
+        </>
     )
 }

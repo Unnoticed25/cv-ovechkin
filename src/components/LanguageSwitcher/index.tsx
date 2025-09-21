@@ -1,32 +1,42 @@
 'use client';
 
-import {usePathname, useRouter} from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import {MouseEvent, useEffect} from 'react';
 import styles from "./index.module.scss"
 
 interface LanguageSwitcherProps {
     currentLang: string;
 }
 
-export default function LanguageSwitcher({currentLang}: LanguageSwitcherProps) {
+export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps) {
     const pathname = usePathname();
     const router = useRouter();
 
-    const switchLanguage = (newLang: string) => {
+    useEffect(()=>{
+        document.getElementsByTagName('main')[0].classList.remove('transition');
+    })
+
+    const switchLanguage = (e: MouseEvent<HTMLButtonElement>, newLang: string) => {
         const segments = pathname.split('/');
         segments[1] = newLang;
-        router.push(segments.join('/'));
+        document.getElementsByTagName('main')[0].classList.add('transition');
+        setTimeout(()=> {
+            router.push(segments.join('/'));
+        }, 400);
+
+        // document.main.classList.remove('transition');
     };
 
     return (
         <div className={styles.switcher}>
             <button
-                onClick={() => switchLanguage('ru')}
+                onClick={(e) => switchLanguage(e, 'ru')}
                 disabled={currentLang === 'ru'}
             >
                 RU
             </button>
             <button
-                onClick={() => switchLanguage('en')}
+                onClick={(e) => switchLanguage(e, 'en')}
                 disabled={currentLang === 'en'}
             >
                 EN

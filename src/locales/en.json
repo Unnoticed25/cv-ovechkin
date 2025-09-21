@@ -12,12 +12,22 @@
             "about": {
                 "title_experience": "Experience",
                 "title_about": "About me",
-                "text_experience": "sanchous20@gmail.com",
-                "text_about": "Россия, Санкт-Петербург"
+                "title_education": "Education",
+                "text_education": "<span><i>St. Petersburg College of Telecommunications named after E.T. Krenkel (SPbKT)</i> - 2020 г. <br>9.02.03 Programming in computer systems</span>",
+                "text_experience": "<p style=\"color: white\">Middle Frontend Developer, 2021 - 2025</p><i> EMS - \"Event management system №1\"</i><br> <a class=\"siteLink\" href=\"https://sum1.ru/\" target=\"_blank\" rel=\"noopener\">visit website</a><br><p style=\"color: white; margin-top: 12px;\">Junior Frontend Developer, 2020</p><i> GO-UP</i><br> <a class=\"siteLink\" href=\"https://go-up.info/\" target=\"_blank\" rel=\"noopener\">visit website</a>",
+                "text_about": "For 6 years, I've been building web applications and mastering new technologies. <br>I deliver effective solutions that address not just product needs, but core business goals. <br>I believe a cohesive team can tackle any challenge."
             },
             "skills": {
-                "title_skills": "Skills & Tools"
+                "title_skills": "Skills & Tools",
+                "title_add": "Additional",
+                "text_skills": "Next.js, React.js, JavaScript, TypeScript, HTML/CSS, PHP, Redux, Zustand, jQuery, Jest, Drupal, SQL, Git",
+                "text_skills_add": "WebSocket, Mui/Ant/Tailwind, Electron/Tauri, Scss/Sass, Rest API, WebPack, Vite, CI/CD, English - B2, And much more"
             }
         }
+    },
+    "hints": {
+        "phone": "Phone",
+        "email": "Email",
+        "copied": "has been copied"
     }
 }
