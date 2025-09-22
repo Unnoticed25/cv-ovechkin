@@ -45,7 +45,7 @@
   background: linear-gradient(to top, rgb(23, 23, 54) 70%, rgb(112, 112, 252));
   transition-property: opacity, transform, filter;
   transition: ease-in-out;
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 }
 
 .main ol {
@@ -106,19 +106,10 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
+  width: 100%;
   display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
+  justify-content: center;
+  padding: 32px;
 }
 
 /* Enable hover only on non-touch devices */
@@ -131,11 +122,6 @@ a.secondary {
   a.secondary:hover {
     background: var(--button-secondary-hover);
     border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
   }
 }
 
@@ -332,6 +318,20 @@ a.secondary {
   .blockInfo > :nth-child(3){
     padding: 0;
   }
+}
+
+.github{
+  display: block;
+  right: 32px;
+  bottom: 32px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgba(112, 112, 252, .3);
+  opacity: 80%;
+}
+
+.github > a:hover{
+  text-shadow: 0 0 10px #fff;
 }
 
 

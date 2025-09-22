@@ -28,6 +28,7 @@
     "hints": {
         "phone": "Телефон",
         "email": "Email",
-        "copied": "скопирован"
+        "copied": "скопирован",
+        "github_link": "Проект на GitHub"
     }
 }

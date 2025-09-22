@@ -28,6 +28,7 @@
     "hints": {
         "phone": "Phone",
         "email": "Email",
-        "copied": "has been copied"
+        "copied": "has been copied",
+        "github_link": "Project on GitHub"
     }
 }

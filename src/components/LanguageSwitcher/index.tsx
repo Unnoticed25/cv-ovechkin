@@ -22,7 +22,7 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
         document.getElementsByTagName('main')[0].classList.add('transition');
         setTimeout(()=> {
             router.push(segments.join('/'));
-        }, 400);
+        }, 300);
 
         // document.main.classList.remove('transition');
     };

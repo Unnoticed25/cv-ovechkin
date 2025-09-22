@@ -72,8 +72,6 @@ export default async function Home({params}:IProps) {
                     </div>
                 </div>
             </main>
-            <footer className={styles.footer}>
-            </footer>
         </div>
     );
 }
