@@ -1,3 +1,7 @@
+Данный проект выполнен для показа резюме и кейсов к нему в виде сайта. Не нужно ничего клонировать и запускать, просто жмите сюда - https://cv-ovechkin.vercel.app
+
+This project created for presenet my CV as a web-site. You can see. Just click here - https://cv-ovechkin.vercel.app
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
