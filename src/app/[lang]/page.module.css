@@ -19,7 +19,6 @@
 @media (max-width: 1140px) {
   .page{
     flex-flow: column;
-    padding: 0;
     gap: 18px;
   }
 }
@@ -308,6 +307,27 @@ a.secondary {
   padding: 2px 8px;
   width: fit-content;
   line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .blockInfo{
+    display: flex;
+    flex-flow: column;
+  }
+  .verticalDivider{
+    border-left: none;
+    border-top: 2px solid #45477a;
+    width: 100%;
+    margin: 16px 0;
+  }
+  .profileContainer{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .blockInfo > :nth-child(3){
+    padding: 0;
+  }
 }
 
 
